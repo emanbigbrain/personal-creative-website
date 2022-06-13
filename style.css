@@ -5,10 +5,117 @@
 
 @font-face {
   font-family: Misto;
-  src: url(Misto.ttf);
+  src: url(/media/Misto.woff);
 }
 
 @font-face {
-  font-family: Butler;
-  src: url(Butler.otf);
+  font-family: Butler-UltraLight;
+  src: url(/media/Butler-UltraLight.woff);
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(/media/Montserrat-VariableFont_wght.ttf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-black);
+}
+
+h6 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875em;
+  font-weight: 100;
+  color: var(--color-white);
+  margin: 0;
+}
+
+h5 {
+  font-family: Misto;
+  font-weight: 100;
+  font-size: 14;
+  color: var(--color-white);
+  margin: 0;
+}
+
+h2 {
+  font-family: Butler-UltraLight;
+  font-weight: 100;
+  font-size: 7.5em;
+  margin-top: 0;
+  color: var(--color-white);
+}
+
+h1 {
+  font-family: Butler-UltraLight;
+  font-size: 12.5em;
+  color: var(--color-white);
+  font-weight: normal;
+  text-align: center;
+  line-height: 0.95em;
+}
+
+span {
+  font-family: Misto;
+  font-weight: 100;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0 8px 0;
+  margin: 0 10% 0 10%;
+  border-bottom: 0.5px solid;
+  border-color: var(--color-white);
+}
+
+.headerDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.heroContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.scrollDownContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.heroStar {
+  position: absolute;
+  top: 13%;
+  left: 33.25%;
+}
+
+article {
+  padding: 0 10%;
+}
+
+.doubleStars {
+  padding-top: 17.28vh;
+}
+
+.h2Container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.seperationContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
