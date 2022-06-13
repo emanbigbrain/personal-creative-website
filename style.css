@@ -1,0 +1,14 @@
+:root {
+  --color-black: #1c1c1c;
+  --color-white: #fbf8f2;
+}
+
+@font-face {
+  font-family: Misto;
+  src: url(Misto.ttf);
+}
+
+@font-face {
+  font-family: Butler;
+  src: url(Butler.otf);
+}
