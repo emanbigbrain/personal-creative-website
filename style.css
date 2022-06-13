@@ -40,6 +40,22 @@ h5 {
   margin: 0;
 }
 
+h4 {
+  font-family: Misto;
+  font-size: 5em;
+  width: 100vh;
+  margin-bottom: 2%;
+  margin-top: 0;
+  font-weight: normal;
+}
+
+h3 {
+  color: var(--color-white);
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.25em;
+  font-weight: 100;
+}
+
 h2 {
   font-family: Butler-UltraLight;
   font-weight: 100;
@@ -71,6 +87,7 @@ nav {
   margin: 0 10% 0 10%;
   border-bottom: 0.5px solid;
   border-color: var(--color-white);
+  transform-origin: 0.5 0;
 }
 
 .headerDiv {
@@ -118,4 +135,153 @@ article {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 13%;
+}
+
+.firstText {
+  color: var(--color-white);
+  font-family: Butler-UltraLight;
+  font-size: 4em;
+  width: 70%;
+}
+
+.workEthicContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+.secondText {
+  padding: 10% 0;
+  width: 90%;
+  color: var(--color-white);
+  font-size: 4em;
+  font-family: Butler-UltraLight;
+}
+
+.worksContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: var(--color-white);
+  justify-content: space-between;
+  border-bottom: 1px solid;
+  border-color: var(--color-white);
+  margin-bottom: 5%;
+}
+
+.details {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875em;
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.numbering {
+  font-family: Butler-UltraLight;
+  font-size: 1.125em;
+  padding-right: 7%;
+}
+
+.inputField {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  font-size: 1.5em;
+  border-radius: 0;
+  border: 1px solid;
+  border-color: black;
+  width: 40vw;
+  background-color: var(--color-white);
+  padding: 0.75% 0 0.75% 0.75%;
+  margin: 1% 0 0 0;
+}
+
+.inputButton {
+  border: 1px solid;
+  border-radius: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  font-size: 1.25em;
+  padding: 1.125%;
+  background-color: black;
+  color: white;
+  border-color: black;
+  margin: 1% 0 0 0;
+}
+
+label {
+  font-family: Misto;
+  font-size: 2.25em;
+}
+
+.submissionContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+section {
+  background-color: var(--color-white);
+  border-radius: 50px 50px 0 0;
+  margin-top: 20%;
+  padding: 0 10% 7% 10%;
+}
+
+.aboutContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 5%;
+  text-align: center;
+  margin-bottom: 8%;
+}
+
+.aboutGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.aboutText {
+  font-family: Butler-UltraLight;
+  font-size: 2.5em;
+  width: 85%;
+}
+
+form {
+  grid-column-start: 1;
+}
+
+.twoStars {
+  grid-column-start: 2;
+}
+
+.normalStar,
+.mediumStar,
+.bottomMediumStar,
+.emoji {
+  grid-column-start: 2;
+  grid-row-start: 1;
+}
+
+.normalStar {
+  padding-top: 20%;
+}
+
+.mediumStar {
+  padding: 10% 0 0 10%;
+}
+
+.emoji {
+  padding: 25% 0 0 25%;
+}
+
+.bottomMediumStar {
+  padding: 75% 0 0 90%;
 }
