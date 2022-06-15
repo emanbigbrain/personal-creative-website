@@ -1,5 +1,7 @@
 let animationStart = false;
 
+//function for the hero animation
+
 function heroAnimation() {
   if (animationStart === false) {
     anime
@@ -7,11 +9,11 @@ function heroAnimation() {
         easing: "easeOutQuad",
       })
       .add({
-        targets: ".letterAnimation, span",
+        targets: ".letterAnimation, .lutterodtAnimation",
         translateY: [200, 0],
         opacity: [0, 1],
         easing: "easeOutExpo",
-        duration: 1200,
+        duration: 2000,
         delay: (el, i) => 300 + 40 * i,
       })
       .add(
@@ -70,18 +72,42 @@ function heroAnimation() {
       translateY: [0, 20],
       direction: "alternate",
       easing: "easeInOutSine",
-      duration: 3000,
+      duration: 2500,
       loop: true,
     });
     anime({
       targets: ".scrollDown",
       opacity: [0, 1],
-      direction: "alternate",
       easing: "easeInOutSine",
       duration: 1000,
-      loop: true,
     });
   }
 }
 
 window.addEventListener("load", heroAnimation);
+
+//animation for hero text elements to fade out on scroll
+
+let heroFadeOut = anime({
+  targets: ".letterAnimation, .lutterodtAnimation, .scrollDown, .heroStar",
+  translateY: -200,
+  opacity: 0,
+  easing: "easeInOutSine",
+  autoplay: false,
+  delay: (el, i) => 300 + 80 * i,
+});
+
+let secondHero = anime({
+  targets: ".doubleStars",
+  translateY: [300, 0],
+  opacity: 1,
+  easing: "easeInOutSine",
+  autoplay: false,
+});
+
+window.onscroll = function (e) {
+  heroFadeOut.seek(window.pageYOffset * 6);
+  secondHero.seek(window.pageYOffset * 1.85);
+};
+
+//animation for secondHero
