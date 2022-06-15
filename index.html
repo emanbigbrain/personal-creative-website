@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" href="data:," />
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
       integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
@@ -18,7 +19,14 @@
     <script src="animation.js" defer></script>
     <title>Emmanuel Lutterodt</title>
   </head>
-  <body>
+  <body class="stop-scrolling">
+    <audio autoplay id="myAudio">
+      <source
+        id="myAudio"
+        src="media/in-deep-distress-112438.mp3"
+        type="audio/mpeg"
+      />
+    </audio>
     <header>
       <nav>
         <div class="headerDiv homeButton">
@@ -66,7 +74,11 @@
       <article>
         <img class="doubleStars" src="media/twoStars.svg" />
         <div class="h2Container">
-          <h2>I am a <span>Dreamer</span></h2>
+          <h2>
+            <span class="h2Word">I</span> <span class="h2Word">am</span>
+            <span class="h2Word">a</span>
+            <span class="h2SpanWord">Dreamer</span>
+          </h2>
         </div>
         <div class="seperationContainer">
           <img src="media/Line 1.svg" alt="" />
@@ -149,5 +161,16 @@
         </div>
       </section>
     </main>
+    <div class="openerDiv" id="openerDivId">
+      <img class="headphone" src="media/headphones.svg" alt="headphones on?" />
+      <aside>
+        Headphones on for the best experience. Would you like to play opening
+        audio?
+      </aside>
+      <div class="buttonDiv">
+        <button class="audioButton1" id="yesButton">Yeah</button>
+        <button class="audioButton2" id="noButton">Nah</button>
+      </div>
+    </div>
   </body>
 </html>

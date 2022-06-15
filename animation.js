@@ -1,10 +1,71 @@
+//preScreenAnimation and Audio on/off
+let yesButton = document.getElementById("yesButton");
+let noButton = document.getElementById("noButton");
+
+function preScreenDissolve() {
+  let preScreenDissolveAnimation = anime({
+    targets: ".openerDiv",
+    opacity: 0,
+    easing: "easeInOutSine",
+    duration: 1000,
+  });
+  preScreenDissolveAnimation.finished.then(function () {
+    document.getElementById("openerDivId").style.display = "none";
+  });
+}
+//starts opener animation, just the opacity
+function openAnimationFunction() {
+  let openerAnimation = anime({
+    targets: ".headphone, aside, .buttonDiv",
+    opacity: [0, 1],
+    duration: 5000,
+    easing: "easeInOutSine",
+  });
+}
+
+function playAudio() {
+  document.getElementById("myAudio").play();
+}
+
+function noAudio() {
+  document.getElementById("myAudio").pause();
+}
+
+window.addEventListener("load", openAnimationFunction);
+
+yesButton.addEventListener("click", playAudio);
+yesButton.addEventListener("click", heroAnimation);
+noButton.addEventListener("click", noAudio);
+noButton.addEventListener("click", heroAnimation);
+
+//remove preScreen
+
+if (yesButton.addEventListener("click", preScreenDissolve)) {
+} else if (noButton.addEventListener("click", preScreenDissolve)) {
+}
+
 let animationStart = false;
+
+//play audio
+// window.onload = function () {
+//   document.getElementById("myAudio").play();
+// };
+
+//disable scroll function
+function disableScroll() {
+  document.body.classList.add("stop-scrolling");
+}
+
+function enableScroll() {
+  document.body.classList.remove("stop-scrolling");
+}
 
 //function for the hero animation
 
 function heroAnimation() {
+  disableScroll();
   if (animationStart === false) {
-    anime
+    let startHeroAnimation = anime
       .timeline({
         easing: "easeOutQuad",
       })
@@ -64,12 +125,15 @@ function heroAnimation() {
       );
 
     animationStart = true;
+    startHeroAnimation.finished.then(function () {
+      enableScroll();
+    });
   }
 
   if (animationStart === true) {
-    anime({
+    let heroLoopAnimation = anime({
       targets: ".heroStar",
-      translateY: [0, 20],
+      translateY: [0, 30],
       direction: "alternate",
       easing: "easeInOutSine",
       duration: 2500,
@@ -79,12 +143,10 @@ function heroAnimation() {
       targets: ".scrollDown",
       opacity: [0, 1],
       easing: "easeInOutSine",
-      duration: 1000,
+      duration: 3000,
     });
   }
 }
-
-window.addEventListener("load", heroAnimation);
 
 //animation for hero text elements to fade out on scroll
 
@@ -97,7 +159,9 @@ let heroFadeOut = anime({
   delay: (el, i) => 300 + 80 * i,
 });
 
-let secondHero = anime({
+//animation for double stars to fade in
+
+let secondHeroStars = anime({
   targets: ".doubleStars",
   translateY: [300, 0],
   opacity: 1,
@@ -105,9 +169,31 @@ let secondHero = anime({
   autoplay: false,
 });
 
+//wraps every letter into a span
+// let textWrapperSecondHeroText = document.getElementById("h2Id");
+// textWrapperSecondHeroText.innerHTML =
+//   textWrapperSecondHeroText.textContent.replace(
+//     /\S/g,
+//     "<span class='secondHeroLetter'>$&</span>"
+//   );
+
+let secondHeroText = anime({
+  targets: ".h2Word, .h2SpanWord",
+  translateY: [300, 0],
+  opacity: 1,
+  easing: "easeInOutSine",
+  autoplay: false,
+  delay: (el, i) => 300 + 80 * i,
+});
+
+// secondHeroText.finished.then(function () {
+//   disableScroll();
+// });
+
 window.onscroll = function (e) {
   heroFadeOut.seek(window.pageYOffset * 6);
-  secondHero.seek(window.pageYOffset * 1.85);
+  secondHeroStars.seek(window.pageYOffset * 1.85);
+  secondHeroText.seek(window.pageYOffset * 2.5);
 };
 
 //animation for secondHero

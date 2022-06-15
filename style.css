@@ -313,3 +313,78 @@ span {
 .heroStart {
   display: block;
 }
+
+.h2Word {
+  opacity: 0;
+  font-family: Butler-UltraLight;
+  font-weight: normal;
+}
+
+.h2SpanWord {
+  opacity: 0;
+}
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #555;
+}
+
+.openerDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--color-black);
+}
+
+.buttonDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.audioButton1,
+.audioButton2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  font-weight: 100;
+  background-color: var(--color-white);
+  border-radius: 0;
+  padding: 10%;
+  border: none;
+}
+
+.audioButton1 {
+  margin-right: 10%;
+}
+
+.audioButton2 {
+  margin-left: 10%;
+}
+
+aside {
+  font-family: Butler-UltraLight;
+  font-weight: normal;
+  font-size: 1.5em;
+  color: var(--color-white);
+  width: 40%;
+  text-align: center;
+  padding-bottom: 2%;
+}
+
+.headphone {
+  padding-bottom: 2%;
+}
