@@ -168,6 +168,19 @@ let secondHeroStars = anime({
   easing: "easeInOutSine",
   autoplay: false,
 });
+// got stuck doing the animation outwards right here
+secondHeroStars.finished.then(function () {
+  let secondHeroStarsOut = anime({
+    targets: ".doubleStars",
+    translateY: [0, -300],
+    opacity: 0,
+    easing: "easeInOutSine",
+    autoplay: false,
+  });
+  window.onscroll = function (e) {
+    secondHeroStarsOut.seek(window.pageYOffset * 1.85);
+  };
+});
 
 //wraps every letter into a span
 // let textWrapperSecondHeroText = document.getElementById("h2Id");
