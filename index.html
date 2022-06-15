@@ -9,30 +9,52 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
+      integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="animation.js" defer></script>
     <title>Emmanuel Lutterodt</title>
   </head>
   <body>
     <header>
       <nav>
-        <div class="headerDiv">
+        <div class="headerDiv homeButton">
           <img src="media/headerStar.svg" />
           <h6>LUTTERODT, 2022</h6>
         </div>
-        <h5>My Works</h5>
-        <div class="headerDiv">
+        <h5 class="myWorksButton">My Works</h5>
+        <div class="headerDiv behanceButton">
           <img src="media/Behance.svg" />
           <h6>Behance</h6>
         </div>
       </nav>
+      <div class="underlineContainer">
+        <div class="underline"></div>
+      </div>
     </header>
     <main>
       <img class="heroStar" src="media/bigStar.svg" />
       <div class="heroContainer">
-        <h1>EMMANUEL<br /><span>LUTTERODT</span></h1>
+        <h1>
+          <span class="letterAnimation">E</span
+          ><span class="letterAnimation">M</span
+          ><span class="letterAnimation">M</span
+          ><span class="letterAnimation">A</span
+          ><span class="letterAnimation">N</span
+          ><span class="letterAnimation">U</span
+          ><span class="letterAnimation">E</span
+          ><span class="letterAnimation">L</span><br /><span
+            class="lutterodtAnimation"
+            >L</span
+          ><span>U</span><span>T</span><span>T</span><span>E</span><span>R</span
+          ><span>O</span><span>D</span><span>T</span>
+        </h1>
       </div>
-      <div class="scrollDownContainer">
-        <img src="media/arrowDown.svg" />
+      <div class="scrollDownContainer scrollDown">
+        <h6 class="scrollDown">SCROLL DOWN</h6>
       </div>
       <article>
         <img class="doubleStars" src="media/twoStars.svg" />
