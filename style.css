@@ -5,21 +5,21 @@
 
 @font-face {
   font-family: Misto;
-  src: url(/media/Misto.woff);
+  src: url(media/Misto.woff);
   font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
   font-family: Butler-UltraLight;
-  src: url(/media/Butler-UltraLight.woff);
+  src: url(media/Butler-UltraLight.woff);
   font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
   font-family: Montserrat;
-  src: url(/media/Montserrat-VariableFont_wght.ttf);
+  src: url(media/Montserrat-VariableFont_wght.ttf);
 }
 
 body {
