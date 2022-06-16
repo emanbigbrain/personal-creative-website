@@ -6,11 +6,15 @@
 @font-face {
   font-family: Misto;
   src: url(/media/Misto.woff);
+  font-weight: 100;
+  font-style: normal;
 }
 
 @font-face {
   font-family: Butler-UltraLight;
   src: url(/media/Butler-UltraLight.woff);
+  font-weight: 100;
+  font-style: normal;
 }
 
 @font-face {
