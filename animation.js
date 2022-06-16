@@ -199,6 +199,25 @@ let secondHeroText = anime({
   delay: (el, i) => 300 + 80 * i,
 });
 
+let seperationLine = anime({
+  targets: ".line1, .line2",
+  opacity: [0, 1],
+  scaleX: [0, 1],
+  easing: "easeInOutSine",
+  duration: 900,
+  autoplay: false,
+});
+
+let seperationStar = anime({
+  targets: ".sepStar",
+  opacity: [0, 1],
+  scale: [0.4, 1],
+  rotate: "1turn",
+  easing: "easeInOutSine",
+  duration: 800,
+  autoplay: false,
+});
+
 // secondHeroText.finished.then(function () {
 //   disableScroll();
 // });
@@ -207,6 +226,8 @@ window.onscroll = function (e) {
   heroFadeOut.seek(window.pageYOffset * 6);
   secondHeroStars.seek(window.pageYOffset * 1.85);
   secondHeroText.seek(window.pageYOffset * 2.5);
+  seperationLine.seek(window.pageYOffset * 1.3);
+  seperationStar.seek(window.pageYOffset * 1.3);
 };
 
 //animation for secondHero
