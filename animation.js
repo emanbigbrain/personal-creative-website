@@ -119,7 +119,7 @@ function heroAnimation() {
           translateY: [100, 0],
           opacity: [0, 1],
           easing: "easeOutExpo",
-          duration: 4000,
+          duration: 5000,
         },
         "-=2500"
       );
@@ -169,18 +169,18 @@ let secondHeroStars = anime({
   autoplay: false,
 });
 // got stuck doing the animation outwards right here
-secondHeroStars.finished.then(function () {
-  let secondHeroStarsOut = anime({
-    targets: ".doubleStars",
-    translateY: [0, -300],
-    opacity: 0,
-    easing: "easeInOutSine",
-    autoplay: false,
-  });
-  window.onscroll = function (e) {
-    secondHeroStarsOut.seek(window.pageYOffset * 1.85);
-  };
-});
+// secondHeroStars.finished.then(function () {
+//   let secondHeroStarsOut = anime({
+//     targets: ".doubleStars",
+//     translateY: [0, -300],
+//     opacity: 0,
+//     easing: "easeInOutSine",
+//     autoplay: false,
+//   });
+//   window.onscroll = function (e) {
+//     secondHeroStarsOut.seek(window.pageYOffset * 1.85);
+//   };
+// });
 
 //wraps every letter into a span
 // let textWrapperSecondHeroText = document.getElementById("h2Id");
