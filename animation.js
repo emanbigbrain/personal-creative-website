@@ -230,4 +230,9 @@ window.onscroll = function (e) {
   seperationStar.seek(window.pageYOffset * 1.3);
 };
 
+//force scroll to top on page refresh
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+};
+
 //animation for secondHero
