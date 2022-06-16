@@ -183,12 +183,6 @@ let secondHeroStars = anime({
 // });
 
 //wraps every letter into a span
-// let textWrapperSecondHeroText = document.getElementById("h2Id");
-// textWrapperSecondHeroText.innerHTML =
-//   textWrapperSecondHeroText.textContent.replace(
-//     /\S/g,
-//     "<span class='secondHeroLetter'>$&</span>"
-//   );
 
 let secondHeroText = anime({
   targets: ".h2Word, .h2SpanWord",
@@ -218,6 +212,42 @@ let seperationStar = anime({
   autoplay: false,
 });
 
+let workEthicTitle = anime({
+  targets: ".workEthicTitle",
+  translateY: [200, 0],
+  opacity: [0, 1],
+  easing: "easeInOutSine",
+  autoplay: false,
+});
+
+let firstTextSpan = new Letterize({
+  targets: ".normalSpan",
+  wrapper: "span",
+  className: "firstTextSpanSerif",
+});
+
+let firstTextSpanSans = new Letterize({
+  targets: ".displaySpan",
+  wrapper: "span",
+  className: "firstTextSpanSans",
+});
+
+let firstTextAnimation = anime({
+  targets: ".firstTextSpanSerif, .firstTextSpanSans",
+  translateY: [20, 0],
+  opacity: [0, 1],
+  easing: "easeInOutSine",
+  autoplay: false,
+  delay: (el, i) => 200 + 30 * i,
+});
+
+let secondTextAnimation = anime({
+  targets: ".secondText",
+  translateY: [100, 0],
+  opacity: [0, 1],
+  easing: "easeInOutSine",
+  autoplay: false,
+});
 // secondHeroText.finished.then(function () {
 //   disableScroll();
 // });
@@ -228,7 +258,25 @@ window.onscroll = function (e) {
   secondHeroText.seek(window.pageYOffset * 2.5);
   seperationLine.seek(window.pageYOffset * 1.3);
   seperationStar.seek(window.pageYOffset * 1.3);
+  workEthicTitle.seek((scrollPercent() / 30) * workEthicTitle.duration);
+  firstTextAnimation.seek(window.pageYOffset * 1.8);
+  secondTextAnimation.seek(window.pageYOffset / 3);
 };
+
+//Calculate the scroll percentage position
+const scrollPercent = () => {
+  const bodyST = document.body.scrollTop;
+  const docST = document.documentElement.scrollTop;
+  const docSH = document.documentElement.scrollHeight;
+  const docCH = document.documentElement.clientHeight;
+
+  return ((docST + bodyST) / (docSH - docCH)) * 100;
+};
+
+/**
+ * Add a scroll listener on the window object to
+ * control animations based on scroll percentage.
+ */
 
 //force scroll to top on page refresh
 window.onbeforeunload = function () {

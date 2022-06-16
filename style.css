@@ -413,3 +413,17 @@ aside {
   margin-left: 1%;
   transform-origin: 0% 0%;
 }
+
+.workEthicTitle {
+  display: inline-block;
+}
+
+.normalSpan {
+  font-family: Butler-UltraLight;
+  font-weight: 100;
+}
+
+.firstTextSpanSerif {
+  font-family: Butler-UltraLight;
+  font-weight: 100;
+}
