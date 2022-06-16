@@ -248,6 +248,15 @@ let secondTextAnimation = anime({
   easing: "easeInOutSine",
   autoplay: false,
 });
+
+let seperationLine2 = anime({
+  targets: ".line3, .line4",
+  opacity: [0, 1],
+  scaleX: [0, 1],
+  easing: "easeInOutSine",
+  duration: 900,
+  autoplay: false,
+});
 // secondHeroText.finished.then(function () {
 //   disableScroll();
 // });
@@ -261,6 +270,7 @@ window.onscroll = function (e) {
   workEthicTitle.seek((scrollPercent() / 30) * workEthicTitle.duration);
   firstTextAnimation.seek(window.pageYOffset * 1.8);
   secondTextAnimation.seek(window.pageYOffset / 3);
+  seperationLine2.seek((scrollPercent() / 80) * seperationLine2.duration);
 };
 
 //Calculate the scroll percentage position
