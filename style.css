@@ -68,7 +68,7 @@ h1 {
   font-family: Butler-UltraLight;
   font-size: 12.5em;
   color: var(--color-white);
-  font-weight: normal;
+  font-weight: 100;
   text-align: center;
   line-height: 0.95em;
 }
@@ -142,6 +142,7 @@ article {
   font-family: Butler-UltraLight;
   font-size: 4em;
   width: 70%;
+  font-weight: 100;
 }
 
 .workEthicContainer {
@@ -158,6 +159,7 @@ article {
   color: var(--color-white);
   font-size: 4em;
   font-family: Butler-UltraLight;
+  font-weight: 100;
 }
 
 .worksContainer {
@@ -187,6 +189,7 @@ article {
   font-family: Butler-UltraLight;
   font-size: 1.125em;
   padding-right: 7%;
+  font-weight: 100;
 }
 
 .inputField {
@@ -251,6 +254,7 @@ section {
   font-family: Butler-UltraLight;
   font-size: 2.5em;
   width: 85%;
+  font-weight: 100;
 }
 
 form {
@@ -299,7 +303,7 @@ form {
 .letterAnimation {
   display: inline-block; /*This is usually the cause for translation animations in js not working. you can only use animations on elements set to inline-block, so if it doesnt work, maybe try this out first*/
   font-family: Butler-Ultralight;
-  font-weight: normal;
+  font-weight: 100;
 }
 
 .anime {
@@ -317,7 +321,7 @@ span {
 .h2Word {
   opacity: 0;
   font-family: Butler-UltraLight;
-  font-weight: normal;
+  font-weight: 100;
 }
 
 .h2SpanWord {
@@ -377,7 +381,7 @@ span {
 
 aside {
   font-family: Butler-UltraLight;
-  font-weight: normal;
+  font-weight: 100;
   font-size: 1.5em;
   color: var(--color-white);
   width: 40%;
