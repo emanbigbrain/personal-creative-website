@@ -374,7 +374,19 @@ span {
   background-color: var(--color-white);
   border-radius: 0;
   padding: 10%;
-  border: none;
+  border: solid 1px var(--color-white);
+}
+
+.audioButton1:hover {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  border: solid 1px var(--color-white);
+}
+
+.audioButton2:hover {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  border: solid 1px var(--color-white);
 }
 
 .audioButton1 {

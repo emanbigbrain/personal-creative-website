@@ -31,11 +31,17 @@ function noAudio() {
   document.getElementById("myAudio").pause();
 }
 
+function hoverAudio() {
+  document.getElementById("hoverAudio").play();
+}
+
 window.addEventListener("load", openAnimationFunction);
 
 yesButton.addEventListener("click", playAudio);
+yesButton.addEventListener("mouseover", hoverAudio);
 yesButton.addEventListener("click", heroAnimation);
 noButton.addEventListener("click", noAudio);
+noButton.addEventListener("mouseover", hoverAudio);
 noButton.addEventListener("click", heroAnimation);
 
 //remove preScreen
@@ -511,5 +517,3 @@ gsap.from(".emoji", {
 window.onbeforeunload = function () {
   window.scrollTo(0, 0);
 };
-
-//animation for secondHero
