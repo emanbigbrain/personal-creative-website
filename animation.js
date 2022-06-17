@@ -335,7 +335,6 @@ let tlc1 = gsap.timeline({
     start: "top bottom",
     end: "bottom top",
     scrub: 1,
-    markers: true,
   },
 });
 tlc1.from(".c1", {
@@ -357,7 +356,6 @@ let tlc2 = gsap.timeline({
     start: "top 90%",
     end: "bottom top",
     scrub: 1,
-    markers: true,
   },
 });
 
@@ -380,7 +378,6 @@ let tlc3 = gsap.timeline({
     start: "top 85%",
     end: "bottom top",
     scrub: 1,
-    markers: true,
   },
 });
 
@@ -403,7 +400,6 @@ let tlc4 = gsap.timeline({
     start: "top 80%",
     end: "bottom top",
     scrub: 1,
-    markers: true,
   },
 });
 
@@ -432,7 +428,6 @@ gsap.from(".aboutMeSpan", {
     start: "top bottom",
     end: "top center",
     scrub: 1,
-    markers: true,
   },
   y: 60,
   opacity: 0,
@@ -441,25 +436,70 @@ gsap.from(".aboutMeSpan", {
   stagger: 0.1,
 });
 
-let aboutText = new Letterize({
-  targets: ".aboutText",
-  wrapper: "span",
-  className: "aboutTextSpan",
-});
-
-gsap.from(".aboutTextSpan", {
+gsap.from(".aboutText", {
   scrollTrigger: {
-    trigger: ".aboutTextSpan",
+    trigger: ".aboutText",
     start: "top bottom",
-    end: "top center",
+    end: "top 35%",
     scrub: 1,
-    markers: true,
   },
   y: 20,
   opacity: 0,
   ease: "none",
   duration: 1,
-  stagger: 0.1,
+});
+
+gsap.from(".mediumStar", {
+  scrollTrigger: {
+    trigger: ".mediumStar",
+    start: "top bottom",
+    end: "top 70%",
+    scrub: 1,
+  },
+  y: 100,
+  opacity: 0,
+  ease: "none",
+  duration: 1,
+});
+
+gsap.from(".normalStar", {
+  scrollTrigger: {
+    trigger: ".normalStar",
+    start: "top bottom",
+    end: "top 60%",
+    scrub: 1,
+  },
+  y: 100,
+  opacity: 0,
+  ease: "none",
+  duration: 1,
+});
+
+gsap.from(".bottomMediumStar", {
+  scrollTrigger: {
+    trigger: ".bottomMediumStar",
+    start: "top bottom",
+    end: "top 55%",
+    scrub: 1,
+  },
+  y: 100,
+  opacity: 0,
+  ease: "none",
+  duration: 1,
+});
+
+gsap.from(".emoji", {
+  scrollTrigger: {
+    trigger: ".emoji",
+    start: "top 80%",
+    end: "top 55%",
+    scrub: 1,
+  },
+  y: 100,
+  opacity: 0,
+  rotation: 50,
+  ease: "none",
+  duration: 1,
 });
 
 /**

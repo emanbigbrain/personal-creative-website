@@ -257,7 +257,7 @@ label {
 .aboutText {
   font-family: Butler-UltraLight;
   font-size: 2.5em;
-  width: 100%;
+  width: 85%;
   font-weight: 100;
 }
 
@@ -277,16 +277,18 @@ form {
   grid-row-start: 1;
 }
 
+.emojiContainer {
+  grid-column-start: 2;
+  grid-row-start: 1;
+  padding: 25% 0 0 25%;
+}
+
 .normalStar {
   padding-top: 20%;
 }
 
 .mediumStar {
   padding: 10% 0 0 10%;
-}
-
-.emoji {
-  padding: 25% 0 0 25%;
 }
 
 .bottomMediumStar {
@@ -446,5 +448,4 @@ aside {
 
 .aboutTextSpan {
   font-family: Butler-UltraLight;
-  text-align: left;
 }
