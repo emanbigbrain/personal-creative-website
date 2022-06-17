@@ -326,59 +326,95 @@ const scrollPercent = () => {
 
 //using gsap from here, because it's easier to start animation on scroll (going to redo all animations using gsap after)
 
+//animations for drowpdown
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.from(".c1", {
+let tlc1 = gsap.timeline({
   scrollTrigger: {
     trigger: ".c1",
     start: "top bottom",
-    end: "top center",
+    end: "bottom top",
     scrub: 1,
     markers: true,
   },
+});
+tlc1.from(".c1", {
   y: -50,
   opacity: 0,
   ease: "none",
   duration: 1,
 });
 
-gsap.from(".c2", {
+tlc1.to(".c1", {
+  opacity: 0,
+  ease: "none",
+  duration: 1,
+});
+
+let tlc2 = gsap.timeline({
   scrollTrigger: {
     trigger: ".c2",
-    start: "top 80%",
-    end: "top 60%",
+    start: "top 90%",
+    end: "bottom top",
     scrub: 1,
     markers: true,
   },
+});
+
+tlc2.from(".c2", {
   y: -100,
   opacity: 0,
   ease: "none",
   duration: 1,
 });
 
-gsap.from(".c3", {
+tlc2.to(".c2", {
+  opacity: 0,
+  ease: "none",
+  duration: 1,
+});
+
+let tlc3 = gsap.timeline({
   scrollTrigger: {
     trigger: ".c3",
-    start: "top 80%",
-    end: "top 60%",
+    start: "top 85%",
+    end: "bottom top",
     scrub: 1,
     markers: true,
   },
+});
+
+tlc3.from(".c3", {
   y: -100,
   opacity: 0,
   ease: "none",
   duration: 1,
 });
 
-gsap.from(".c4", {
+tlc3.to(".c3", {
+  opacity: 0,
+  ease: "none",
+  duration: 1,
+});
+
+let tlc4 = gsap.timeline({
   scrollTrigger: {
     trigger: ".c4",
     start: "top 80%",
-    end: "top 60%",
+    end: "bottom top",
     scrub: 1,
     markers: true,
   },
+});
+
+tlc4.from(".c4", {
   y: -100,
+  opacity: 0,
+  ease: "none",
+  duration: 1,
+});
+
+tlc4.to(".c4", {
   opacity: 0,
   ease: "none",
   duration: 1,
