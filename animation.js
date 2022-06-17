@@ -420,6 +420,48 @@ tlc4.to(".c4", {
   duration: 1,
 });
 
+let aboutMeSpan = new Letterize({
+  targets: ".aboutMeTitle",
+  wrapper: "span",
+  className: "aboutMeSpan",
+});
+
+gsap.from(".aboutMeSpan", {
+  scrollTrigger: {
+    trigger: ".aboutMeTitle",
+    start: "top bottom",
+    end: "top center",
+    scrub: 1,
+    markers: true,
+  },
+  y: 60,
+  opacity: 0,
+  ease: "none",
+  duration: 1,
+  stagger: 0.1,
+});
+
+let aboutText = new Letterize({
+  targets: ".aboutText",
+  wrapper: "span",
+  className: "aboutTextSpan",
+});
+
+gsap.from(".aboutTextSpan", {
+  scrollTrigger: {
+    trigger: ".aboutTextSpan",
+    start: "top bottom",
+    end: "top center",
+    scrub: 1,
+    markers: true,
+  },
+  y: 20,
+  opacity: 0,
+  ease: "none",
+  duration: 1,
+  stagger: 0.1,
+});
+
 /**
  * Add a scroll listener on the window object to
  * control animations based on scroll percentage.

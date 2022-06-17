@@ -257,7 +257,7 @@ label {
 .aboutText {
   font-family: Butler-UltraLight;
   font-size: 2.5em;
-  width: 85%;
+  width: 100%;
   font-weight: 100;
 }
 
@@ -442,4 +442,9 @@ aside {
 
 .firstSection {
   background-color: none;
+}
+
+.aboutTextSpan {
+  font-family: Butler-UltraLight;
+  text-align: left;
 }
