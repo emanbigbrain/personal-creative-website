@@ -257,6 +257,46 @@ let seperationLine2 = anime({
   duration: 900,
   autoplay: false,
 });
+
+let myWorksTitle = anime({
+  targets: ".myWorksTitle",
+  translateY: [200, 0],
+  opacity: [0, 1],
+  easing: "easeInOutSine",
+  autoplay: false,
+});
+
+// let unfoldingWorks = anime({
+//   targets: ".c1",
+//   translateY: [-100, 0],
+//   opacity: [0, 1],
+//   easing: "easeInOutSine",
+//   autoplay: false,
+// });
+
+// let unfoldingWorks2 = anime({
+//   targets: ".c2",
+//   translateY: [-100, 0],
+//   opacity: [0, 1],
+//   easing: "easeInOutSine",
+//   autoplay: false,
+// });
+
+// let unfoldingWorks3 = anime({
+//   targets: ".c3",
+//   translateY: [-100, 0],
+//   opacity: [0, 1],
+//   easing: "easeInOutSine",
+//   autoplay: false,
+// });
+
+// let unfoldingWorks4 = anime({
+//   targets: ".c4",
+//   translateY: [-100, 0],
+//   opacity: [0, 1],
+//   easing: "easeInOutSine",
+//   autoplay: false,
+// });
 // secondHeroText.finished.then(function () {
 //   disableScroll();
 // });
@@ -271,6 +311,7 @@ window.onscroll = function (e) {
   firstTextAnimation.seek(window.pageYOffset * 1.8);
   secondTextAnimation.seek(window.pageYOffset / 3);
   seperationLine2.seek((scrollPercent() / 80) * seperationLine2.duration);
+  myWorksTitle.seek((scrollPercent() / 85) * myWorksTitle.duration);
 };
 
 //Calculate the scroll percentage position
@@ -282,6 +323,66 @@ const scrollPercent = () => {
 
   return ((docST + bodyST) / (docSH - docCH)) * 100;
 };
+
+//using gsap from here, because it's easier to start animation on scroll (going to redo all animations using gsap after)
+
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.from(".c1", {
+  scrollTrigger: {
+    trigger: ".c1",
+    start: "top bottom",
+    end: "top center",
+    scrub: 1,
+    markers: true,
+  },
+  y: -50,
+  opacity: 0,
+  ease: "none",
+  duration: 1,
+});
+
+gsap.from(".c2", {
+  scrollTrigger: {
+    trigger: ".c2",
+    start: "top 80%",
+    end: "top 60%",
+    scrub: 1,
+    markers: true,
+  },
+  y: -100,
+  opacity: 0,
+  ease: "none",
+  duration: 1,
+});
+
+gsap.from(".c3", {
+  scrollTrigger: {
+    trigger: ".c3",
+    start: "top 80%",
+    end: "top 60%",
+    scrub: 1,
+    markers: true,
+  },
+  y: -100,
+  opacity: 0,
+  ease: "none",
+  duration: 1,
+});
+
+gsap.from(".c4", {
+  scrollTrigger: {
+    trigger: ".c4",
+    start: "top 80%",
+    end: "top 60%",
+    scrub: 1,
+    markers: true,
+  },
+  y: -100,
+  opacity: 0,
+  ease: "none",
+  duration: 1,
+});
 
 /**
  * Add a scroll listener on the window object to
