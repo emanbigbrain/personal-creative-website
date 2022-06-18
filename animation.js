@@ -273,41 +273,6 @@ let myWorksTitle = anime({
   autoplay: false,
 });
 
-// let unfoldingWorks = anime({
-//   targets: ".c1",
-//   translateY: [-100, 0],
-//   opacity: [0, 1],
-//   easing: "easeInOutSine",
-//   autoplay: false,
-// });
-
-// let unfoldingWorks2 = anime({
-//   targets: ".c2",
-//   translateY: [-100, 0],
-//   opacity: [0, 1],
-//   easing: "easeInOutSine",
-//   autoplay: false,
-// });
-
-// let unfoldingWorks3 = anime({
-//   targets: ".c3",
-//   translateY: [-100, 0],
-//   opacity: [0, 1],
-//   easing: "easeInOutSine",
-//   autoplay: false,
-// });
-
-// let unfoldingWorks4 = anime({
-//   targets: ".c4",
-//   translateY: [-100, 0],
-//   opacity: [0, 1],
-//   easing: "easeInOutSine",
-//   autoplay: false,
-// });
-// secondHeroText.finished.then(function () {
-//   disableScroll();
-// });
-
 window.onscroll = function (e) {
   heroFadeOut.seek(window.pageYOffset * 6);
   secondHeroStars.seek(window.pageYOffset * 1.85);
@@ -547,6 +512,13 @@ function hoverGif1() {
 }
 
 let worksContainer1 = document.getElementById("worksContainer1");
+worksContainer1.addEventListener("mouseenter", () => {
+  document.getElementById("hoverAudioFlex").play();
+});
+worksContainer1.addEventListener("mouseleave", () => {
+  document.getElementById("hoverAudioFlex").pause();
+  document.getElementById("hoverAudioFlex").currentTime = 0.01;
+});
 worksContainer1.addEventListener("mouseover", hoverGif1);
 worksContainer1.addEventListener("mouseleave", () => {
   ancientGreekGif.style.display = "none";
@@ -563,6 +535,13 @@ function hoverGif2() {
 }
 
 let worksContainer2 = document.getElementById("worksContainer2");
+worksContainer2.addEventListener("mouseenter", () => {
+  document.getElementById("hoverAudioFlex").play();
+});
+worksContainer2.addEventListener("mouseleave", () => {
+  document.getElementById("hoverAudioFlex").pause();
+  document.getElementById("hoverAudioFlex").currentTime = 0.01;
+});
 worksContainer2.addEventListener("mouseover", hoverGif2);
 worksContainer2.addEventListener("mouseleave", () => {
   munchiesGif.style.display = "none";
@@ -579,6 +558,13 @@ function hoverGif4() {
 }
 
 let worksContainer4 = document.getElementById("worksContainer4");
+worksContainer4.addEventListener("mouseenter", () => {
+  document.getElementById("hoverAudioFlex").play();
+});
+worksContainer4.addEventListener("mouseleave", () => {
+  document.getElementById("hoverAudioFlex").pause();
+  document.getElementById("hoverAudioFlex").currentTime = 0.01;
+});
 worksContainer4.addEventListener("mouseover", hoverGif4);
 worksContainer4.addEventListener("mouseleave", () => {
   onSpeedGif.style.display = "none";
@@ -595,6 +581,13 @@ function hoverGif3() {
 }
 
 let worksContainer3 = document.getElementById("worksContainer3");
+worksContainer3.addEventListener("mouseenter", () => {
+  document.getElementById("hoverAudioFlex").play();
+});
+worksContainer3.addEventListener("mouseleave", () => {
+  document.getElementById("hoverAudioFlex").pause();
+  document.getElementById("hoverAudioFlex").currentTime = 0.01;
+});
 worksContainer3.addEventListener("mouseover", hoverGif3);
 worksContainer3.addEventListener("mouseleave", () => {
   gameflixGif.style.display = "none";
