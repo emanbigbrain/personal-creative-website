@@ -350,11 +350,16 @@ tlc1.from(".c1", {
   duration: 1,
 });
 
-tlc1.to(".c1", {
-  opacity: 0,
-  ease: "none",
-  duration: 1,
-});
+tlc1.to(
+  ".c1",
+  {
+    y: -100,
+    opacity: 0,
+    ease: "none",
+    duration: 1,
+  },
+  "+=3"
+);
 
 let tlc2 = gsap.timeline({
   scrollTrigger: {
@@ -372,11 +377,16 @@ tlc2.from(".c2", {
   duration: 1,
 });
 
-tlc2.to(".c2", {
-  opacity: 0,
-  ease: "none",
-  duration: 1,
-});
+tlc2.to(
+  ".c2",
+  {
+    y: -100,
+    opacity: 0,
+    ease: "none",
+    duration: 1,
+  },
+  "+=3"
+);
 
 let tlc3 = gsap.timeline({
   scrollTrigger: {
@@ -394,11 +404,16 @@ tlc3.from(".c3", {
   duration: 1,
 });
 
-tlc3.to(".c3", {
-  opacity: 0,
-  ease: "none",
-  duration: 1,
-});
+tlc3.to(
+  ".c3",
+  {
+    y: -100,
+    opacity: 0,
+    ease: "none",
+    duration: 1,
+  },
+  "+=3"
+);
 
 let tlc4 = gsap.timeline({
   scrollTrigger: {
@@ -416,11 +431,16 @@ tlc4.from(".c4", {
   duration: 1,
 });
 
-tlc4.to(".c4", {
-  opacity: 0,
-  ease: "none",
-  duration: 1,
-});
+tlc4.to(
+  ".c4",
+  {
+    y: -100,
+    opacity: 0,
+    ease: "none",
+    duration: 1,
+  },
+  "+=3"
+);
 
 let aboutMeSpan = new Letterize({
   targets: ".aboutMeTitle",
@@ -512,6 +532,72 @@ gsap.from(".emoji", {
  * Add a scroll listener on the window object to
  * control animations based on scroll percentage.
  */
+
+//gif following mousecursor
+
+function hoverGif1() {
+  let gif1 = document.getElementById("ancientGreekGif");
+  const onMouseMove = (e) => {
+    gif1.style.left = e.pageX + "px";
+    gif1.style.top = e.pageY + "px";
+  };
+  gif1.style.display = "inline";
+  document.addEventListener("mousemove", onMouseMove);
+}
+
+let worksContainer1 = document.getElementById("worksContainer1");
+worksContainer1.addEventListener("mouseover", hoverGif1);
+worksContainer1.addEventListener("mouseleave", () => {
+  ancientGreekGif.style.display = "none";
+});
+
+function hoverGif2() {
+  let gif2 = document.getElementById("munchiesGif");
+  const onMouseMove2 = (e) => {
+    gif2.style.left = e.pageX + "px";
+    gif2.style.top = e.pageY + "px";
+  };
+  gif2.style.display = "inline";
+  document.addEventListener("mousemove", onMouseMove2);
+}
+
+let worksContainer2 = document.getElementById("worksContainer2");
+worksContainer2.addEventListener("mouseover", hoverGif2);
+worksContainer2.addEventListener("mouseleave", () => {
+  munchiesGif.style.display = "none";
+});
+
+function hoverGif4() {
+  let gif4 = document.getElementById("onSpeedGif");
+  const onMouseMove4 = (e) => {
+    gif4.style.left = e.pageX + "px";
+    gif4.style.top = e.pageY + "px";
+  };
+  gif4.style.display = "inline";
+  document.addEventListener("mousemove", onMouseMove4);
+}
+
+let worksContainer4 = document.getElementById("worksContainer4");
+worksContainer4.addEventListener("mouseover", hoverGif4);
+worksContainer4.addEventListener("mouseleave", () => {
+  onSpeedGif.style.display = "none";
+});
+
+function hoverGif3() {
+  let gif3 = document.getElementById("gameflixGif");
+  const onMouseMove3 = (e) => {
+    gif3.style.left = e.pageX + "px";
+    gif3.style.top = e.pageY + "px";
+  };
+  gif3.style.display = "inline";
+  document.addEventListener("mousemove", onMouseMove3);
+}
+
+let worksContainer3 = document.getElementById("worksContainer3");
+worksContainer3.addEventListener("mouseover", hoverGif3);
+worksContainer3.addEventListener("mouseleave", () => {
+  gameflixGif.style.display = "none";
+});
 
 //force scroll to top on page refresh
 window.onbeforeunload = function () {

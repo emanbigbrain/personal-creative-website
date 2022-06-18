@@ -461,3 +461,13 @@ aside {
 .aboutTextSpan {
   font-family: Butler-UltraLight;
 }
+
+.ancientGreekGif,
+.munchiesGif,
+.onSpeedGif,
+.gameflixGif {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  display: none;
+  transform-origin: 100% 100%;
+}
