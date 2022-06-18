@@ -471,3 +471,15 @@ aside {
   display: none;
   transform-origin: 100% 100%;
 }
+
+.muteButton {
+  position: fixed;
+  top: 92%;
+  left: 90%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  font-size: 1em;
+  color: var(--color-white);
+  mix-blend-mode: difference;
+  cursor: pointer;
+}

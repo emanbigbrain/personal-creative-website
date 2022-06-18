@@ -28,7 +28,8 @@ function playAudio() {
 }
 
 function noAudio() {
-  document.getElementById("myAudio").pause();
+  document.getElementById("myAudio").play;
+  document.getElementById("myAudio").muted = true;
 }
 
 function hoverAudio() {
@@ -598,6 +599,20 @@ worksContainer3.addEventListener("mouseover", hoverGif3);
 worksContainer3.addEventListener("mouseleave", () => {
   gameflixGif.style.display = "none";
 });
+
+//unmute / mute audio
+let button = document.getElementById("muteButton");
+let muteAudio = document.getElementById("myAudio");
+button.onclick = function () {
+  if (muteAudio.muted === false) {
+    muteAudio.muted = true;
+  } else {
+    muteAudio.muted = false;
+  }
+  if (muteAudio !== muteAudio.pause()) {
+    muteAudio.play();
+  }
+};
 
 //force scroll to top on page refresh
 window.onbeforeunload = function () {
