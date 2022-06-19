@@ -92,6 +92,13 @@ nav {
   transform-origin: 0.5 0;
 }
 
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  mix-blend-mode: difference;
+}
+
 .headerDiv {
   display: flex;
   flex-direction: row;
