@@ -518,10 +518,20 @@ function hoverGif1() {
 let worksContainer1 = document.getElementById("worksContainer1");
 worksContainer1.addEventListener("mouseenter", () => {
   document.getElementById("hoverAudioFlex").play();
+  gsap.to("#worksContainer1", {
+    scale: 1.1,
+    ease: "expo",
+    duration: 0.3,
+  });
 });
 worksContainer1.addEventListener("mouseleave", () => {
   document.getElementById("hoverAudioFlex").pause();
   document.getElementById("hoverAudioFlex").currentTime = 0.01;
+  gsap.to("#worksContainer1", {
+    scale: 1,
+    ease: "expo",
+    duration: 0.3,
+  });
 });
 worksContainer1.addEventListener("mouseover", hoverGif1);
 worksContainer1.addEventListener("mouseleave", () => {
@@ -540,11 +550,21 @@ function hoverGif2() {
 
 let worksContainer2 = document.getElementById("worksContainer2");
 worksContainer2.addEventListener("mouseenter", () => {
+  gsap.to("#worksContainer2", {
+    scale: 1.1,
+    ease: "expo",
+    duration: 0.3,
+  });
   document.getElementById("hoverAudioFlex").play();
 });
 worksContainer2.addEventListener("mouseleave", () => {
   document.getElementById("hoverAudioFlex").pause();
   document.getElementById("hoverAudioFlex").currentTime = 0.01;
+  gsap.to("#worksContainer2", {
+    scale: 1,
+    ease: "expo",
+    duration: 0.3,
+  });
 });
 worksContainer2.addEventListener("mouseover", hoverGif2);
 worksContainer2.addEventListener("mouseleave", () => {
@@ -564,10 +584,20 @@ function hoverGif4() {
 let worksContainer4 = document.getElementById("worksContainer4");
 worksContainer4.addEventListener("mouseenter", () => {
   document.getElementById("hoverAudioFlex").play();
+  gsap.to("#worksContainer4", {
+    scale: 1.1,
+    ease: "expo",
+    duration: 0.3,
+  });
 });
 worksContainer4.addEventListener("mouseleave", () => {
   document.getElementById("hoverAudioFlex").pause();
   document.getElementById("hoverAudioFlex").currentTime = 0.01;
+  gsap.to("#worksContainer4", {
+    scale: 1,
+    ease: "expo",
+    duration: 0.3,
+  });
 });
 worksContainer4.addEventListener("mouseover", hoverGif4);
 worksContainer4.addEventListener("mouseleave", () => {
@@ -587,10 +617,20 @@ function hoverGif3() {
 let worksContainer3 = document.getElementById("worksContainer3");
 worksContainer3.addEventListener("mouseenter", () => {
   document.getElementById("hoverAudioFlex").play();
+  gsap.to("#worksContainer3", {
+    scale: 1.1,
+    ease: "expo",
+    duration: 0.3,
+  });
 });
 worksContainer3.addEventListener("mouseleave", () => {
   document.getElementById("hoverAudioFlex").pause();
   document.getElementById("hoverAudioFlex").currentTime = 0.01;
+  gsap.to("#worksContainer3", {
+    scale: 1,
+    ease: "expo",
+    duration: 0.3,
+  });
 });
 worksContainer3.addEventListener("mouseover", hoverGif3);
 worksContainer3.addEventListener("mouseleave", () => {
