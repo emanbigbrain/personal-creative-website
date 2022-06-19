@@ -483,3 +483,9 @@ aside {
   mix-blend-mode: difference;
   cursor: pointer;
 }
+
+.buttonText {
+  text-decoration: underline;
+  text-decoration-thickness: 0.5px;
+  text-underline-offset: 5px;
+}

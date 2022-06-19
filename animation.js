@@ -25,6 +25,10 @@ function openAnimationFunction() {
 
 function playAudio() {
   document.getElementById("myAudio").play();
+  let button = document.getElementById("muteButton");
+  let muteAudio = document.getElementById("myAudio");
+  let textButton = document.getElementById("buttonText");
+  textButton.innerText = "MUTE AUDIO";
 }
 
 function noAudio() {
@@ -596,11 +600,14 @@ worksContainer3.addEventListener("mouseleave", () => {
 //unmute / mute audio
 let button = document.getElementById("muteButton");
 let muteAudio = document.getElementById("myAudio");
+let textButton = document.getElementById("buttonText");
 button.onclick = function () {
   if (muteAudio.muted === false) {
     muteAudio.muted = true;
+    textButton.innerText = "UNMUTE AUDIO";
   } else {
     muteAudio.muted = false;
+    textButton.innerText = "MUTE AUDIO";
   }
   if (muteAudio !== muteAudio.pause()) {
     muteAudio.play();
