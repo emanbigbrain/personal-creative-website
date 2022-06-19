@@ -28,7 +28,7 @@ function playAudio() {
   let button = document.getElementById("muteButton");
   let muteAudio = document.getElementById("myAudio");
   let textButton = document.getElementById("buttonText");
-  textButton.innerText = "MUTE AUDIO";
+  textButton.innerText = "MUTE MUSIC";
 }
 
 function noAudio() {
@@ -644,10 +644,10 @@ let textButton = document.getElementById("buttonText");
 button.onclick = function () {
   if (muteAudio.muted === false) {
     muteAudio.muted = true;
-    textButton.innerText = "UNMUTE AUDIO";
+    textButton.innerText = "UNMUTE MUSIC";
   } else {
     muteAudio.muted = false;
-    textButton.innerText = "MUTE AUDIO";
+    textButton.innerText = "MUTE MUSIC";
   }
   if (muteAudio !== muteAudio.pause()) {
     muteAudio.play();
