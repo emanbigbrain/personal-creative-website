@@ -660,3 +660,80 @@ if (document.getElementById("indexHtml")) {
     window.scrollTo(0, 0);
   };
 }
+
+if (document.getElementById("worksHtml")) {
+  let clickCounter = false;
+  const scroll = new LocomotiveScroll({
+    el: document.querySelector("[data-scroll-container]"),
+    smooth: true,
+  });
+
+  //hover over works animation
+  let worksContainer = document.getElementById("worksContainer");
+
+  worksContainer.addEventListener("mouseenter", function () {
+    gsap.to(".course1", {
+      y: 0,
+      opacity: 1,
+      duration: 0.3,
+      ease: "expo",
+    });
+    gsap.to(".header1", {
+      color: "#FBF8F2",
+      duration: 0.4,
+      ease: "expo",
+    });
+  });
+
+  worksContainer.addEventListener("mouseleave", function () {
+    gsap.to(".course1", {
+      y: 50,
+      opacity: 0,
+      duration: 0.3,
+      ease: "expo",
+    });
+    gsap.to(".header1", {
+      color: "transparent",
+      duration: 0.4,
+      ease: "expo",
+    });
+  });
+
+  worksContainer.addEventListener("click", function () {
+    if (clickCounter === false) {
+      let worksTlTo1 = gsap.timeline();
+
+      worksTlTo1.to(".worksLine1", {
+        scaleX: 1,
+        opacity: 1,
+        duration: 0.7,
+        ease: "expo",
+      });
+
+      worksTlTo1.to(".worksInfoContainer1", {
+        height: "auto",
+        duration: 0.7,
+        ease: "expo",
+      });
+
+      clickCounter = true;
+    } else if (clickCounter === true) {
+      let worksTlFrom1 = gsap.timeline();
+
+      worksTlFrom1.to(".worksLine1", {
+        scaleX: 0,
+        opacity: 0,
+        duration: 0.7,
+        ease: "expo",
+      });
+
+      worksTlFrom1.to(".worksInfoContainer1", {
+        height: "13%",
+        duration: 0.7,
+        ease: "expo",
+      });
+
+      clickCounter = false;
+    }
+  });
+}
