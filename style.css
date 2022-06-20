@@ -52,7 +52,7 @@ h5 {
 h4 {
   font-family: Misto;
   font-size: 5em;
-  width: 100vw;
+  width: 70vw;
   margin-bottom: 2%;
   margin-top: 0;
   font-weight: normal;
@@ -603,8 +603,15 @@ a:active {
   margin-bottom: 3%;
 }
 
-.worksInfoContainer {
-  height: 13%;
+.worksInfoContainer1,
+.worksInfoContainer2,
+.worksInfoContainer3,
+.worksInfoContainer4,
+.worksInfoContainer5,
+.worksInfoContainer6,
+.worksInfoContainer7,
+.worksInfoContainer8 {
+  height: 13vh;
   overflow: hidden;
 }
 
