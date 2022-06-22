@@ -667,10 +667,24 @@ if (document.getElementById("worksHtml")) {
     smooth: true,
   });
 
-  let clickCounter = false;
+  let clickCounter1 = false;
+  let clickCounter2 = false;
+  let clickCounter3 = false;
+  let clickCounter4 = false;
+  let clickCounter5 = false;
+  let clickCounter6 = false;
+  let clickCounter7 = false;
+  let clickCounter8 = false;
 
   //hover over works animation
   let w1 = document.getElementById("w1");
+  let w2 = document.getElementById("w2");
+  let w3 = document.getElementById("w3");
+  let w4 = document.getElementById("w4");
+  let w5 = document.getElementById("w5");
+  let w6 = document.getElementById("w6");
+  let w7 = document.getElementById("w7");
+  let w8 = document.getElementById("w8");
 
   w1.addEventListener("mouseenter", function () {
     gsap.to(".course1", {
@@ -701,7 +715,7 @@ if (document.getElementById("worksHtml")) {
   });
 
   w1.addEventListener("click", function () {
-    if (clickCounter === false) {
+    if (clickCounter1 === false) {
       let worksTlTo1 = gsap.timeline();
 
       worksTlTo1.to(".worksLine1", {
@@ -717,8 +731,8 @@ if (document.getElementById("worksHtml")) {
         ease: "expo",
       });
 
-      clickCounter = true;
-    } else if (clickCounter === true) {
+      clickCounter1 = true;
+    } else if (clickCounter1 === true) {
       let worksTlFrom1 = gsap.timeline();
 
       worksTlFrom1.to(".worksLine1", {
@@ -734,8 +748,481 @@ if (document.getElementById("worksHtml")) {
         ease: "expo",
       });
 
-      clickCounter = false;
+      clickCounter1 = false;
     }
   });
-  console.log(clickCounter);
+
+  //w2
+  w2.addEventListener("mouseenter", function () {
+    gsap.to(".course2", {
+      y: 0,
+      opacity: 1,
+      duration: 0.3,
+      ease: "expo",
+    });
+    gsap.to(".header2", {
+      color: "#FBF8F2",
+      duration: 0.4,
+      ease: "expo",
+    });
+  });
+
+  w2.addEventListener("mouseleave", function () {
+    gsap.to(".course2", {
+      y: 50,
+      opacity: 0,
+      duration: 0.3,
+      ease: "expo",
+    });
+    gsap.to(".header2", {
+      color: "transparent",
+      duration: 0.4,
+      ease: "expo",
+    });
+  });
+
+  w2.addEventListener("click", function () {
+    if (clickCounter2 === false) {
+      let worksTlTo2 = gsap.timeline();
+
+      worksTlTo2.to(".worksLine2", {
+        scaleX: 1,
+        opacity: 1,
+        duration: 0.7,
+        ease: "expo",
+      });
+
+      worksTlTo2.to(".worksInfoContainer2", {
+        height: "auto",
+        duration: 0.7,
+        ease: "expo",
+      });
+
+      clickCounter2 = true;
+    } else if (clickCounter2 === true) {
+      let worksTlFrom2 = gsap.timeline();
+
+      worksTlFrom2.to(".worksLine2", {
+        scaleX: 0,
+        opacity: 0,
+        duration: 0.7,
+        ease: "expo",
+      });
+
+      worksTlFrom2.to(".worksInfoContainer2", {
+        height: "13vh",
+        duration: 0.7,
+        ease: "expo",
+      });
+
+      clickCounter2 = false;
+    }
+  });
+
+  //w3
+
+  w3.addEventListener("mouseenter", function () {
+    gsap.to(".course3", {
+      y: 0,
+      opacity: 1,
+      duration: 0.3,
+      ease: "expo",
+    });
+    gsap.to(".header3", {
+      color: "#FBF8F2",
+      duration: 0.4,
+      ease: "expo",
+    });
+  });
+
+  w3.addEventListener("mouseleave", function () {
+    gsap.to(".course3", {
+      y: 50,
+      opacity: 0,
+      duration: 0.3,
+      ease: "expo",
+    });
+    gsap.to(".header3", {
+      color: "transparent",
+      duration: 0.4,
+      ease: "expo",
+    });
+  });
+
+  w3.addEventListener("click", function () {
+    if (clickCounter3 === false) {
+      let worksTlTo3 = gsap.timeline();
+
+      worksTlTo3.to(".worksLine3", {
+        scaleX: 1,
+        opacity: 1,
+        duration: 0.7,
+        ease: "expo",
+      });
+
+      worksTlTo3.to(".worksInfoContainer3", {
+        height: "auto",
+        duration: 0.7,
+        ease: "expo",
+      });
+
+      clickCounter3 = true;
+    } else if (clickCounter3 === true) {
+      let worksTlFrom3 = gsap.timeline();
+
+      worksTlFrom3.to(".worksLine3", {
+        scaleX: 0,
+        opacity: 0,
+        duration: 0.7,
+        ease: "expo",
+      });
+
+      worksTlFrom3.to(".worksInfoContainer3", {
+        height: "13vh",
+        duration: 0.7,
+        ease: "expo",
+      });
+
+      clickCounter3 = false;
+    }
+  });
+
+  //w4
+
+  w4.addEventListener("mouseenter", function () {
+    gsap.to(".course4", {
+      y: 0,
+      opacity: 1,
+      duration: 0.3,
+      ease: "expo",
+    });
+    gsap.to(".header4", {
+      color: "#FBF8F2",
+      duration: 0.4,
+      ease: "expo",
+    });
+  });
+
+  w4.addEventListener("mouseleave", function () {
+    gsap.to(".course4", {
+      y: 50,
+      opacity: 0,
+      duration: 0.3,
+      ease: "expo",
+    });
+    gsap.to(".header4", {
+      color: "transparent",
+      duration: 0.4,
+      ease: "expo",
+    });
+  });
+
+  w4.addEventListener("click", function () {
+    if (clickCounter4 === false) {
+      let worksTlTo4 = gsap.timeline();
+
+      worksTlTo4.to(".worksLine4", {
+        scaleX: 1,
+        opacity: 1,
+        duration: 0.7,
+        ease: "expo",
+      });
+
+      worksTlTo4.to(".worksInfoContainer4", {
+        height: "auto",
+        duration: 0.7,
+        ease: "expo",
+      });
+
+      clickCounter4 = true;
+    } else if (clickCounter4 === true) {
+      let worksTlFrom4 = gsap.timeline();
+
+      worksTlFrom4.to(".worksLine4", {
+        scaleX: 0,
+        opacity: 0,
+        duration: 0.7,
+        ease: "expo",
+      });
+
+      worksTlFrom4.to(".worksInfoContainer4", {
+        height: "13vh",
+        duration: 0.7,
+        ease: "expo",
+      });
+
+      clickCounter4 = false;
+    }
+  });
+
+  //w5
+  w5.addEventListener("mouseenter", function () {
+    gsap.to(".course5", {
+      y: 0,
+      opacity: 1,
+      duration: 0.3,
+      ease: "expo",
+    });
+    gsap.to(".header5", {
+      color: "#FBF8F2",
+      duration: 0.4,
+      ease: "expo",
+    });
+  });
+
+  w5.addEventListener("mouseleave", function () {
+    gsap.to(".course5", {
+      y: 50,
+      opacity: 0,
+      duration: 0.3,
+      ease: "expo",
+    });
+    gsap.to(".header5", {
+      color: "transparent",
+      duration: 0.4,
+      ease: "expo",
+    });
+  });
+
+  w5.addEventListener("click", function () {
+    if (clickCounter5 === false) {
+      let worksTlTo5 = gsap.timeline();
+
+      worksTlTo5.to(".worksLine5", {
+        scaleX: 1,
+        opacity: 1,
+        duration: 0.7,
+        ease: "expo",
+      });
+
+      worksTlTo5.to(".worksInfoContainer5", {
+        height: "auto",
+        duration: 0.7,
+        ease: "expo",
+      });
+
+      clickCounter5 = true;
+    } else if (clickCounter5 === true) {
+      let worksTlFrom5 = gsap.timeline();
+
+      worksTlFrom5.to(".worksLine5", {
+        scaleX: 0,
+        opacity: 0,
+        duration: 0.7,
+        ease: "expo",
+      });
+
+      worksTlFrom5.to(".worksInfoContainer5", {
+        height: "13vh",
+        duration: 0.7,
+        ease: "expo",
+      });
+
+      clickCounter5 = false;
+    }
+  });
+
+  //w6
+
+  w6.addEventListener("mouseenter", function () {
+    gsap.to(".course6", {
+      y: 0,
+      opacity: 1,
+      duration: 0.3,
+      ease: "expo",
+    });
+    gsap.to(".header6", {
+      color: "#FBF8F2",
+      duration: 0.4,
+      ease: "expo",
+    });
+  });
+
+  w6.addEventListener("mouseleave", function () {
+    gsap.to(".course6", {
+      y: 50,
+      opacity: 0,
+      duration: 0.3,
+      ease: "expo",
+    });
+    gsap.to(".header6", {
+      color: "transparent",
+      duration: 0.4,
+      ease: "expo",
+    });
+  });
+
+  w6.addEventListener("click", function () {
+    if (clickCounter6 === false) {
+      let worksTlTo6 = gsap.timeline();
+
+      worksTlTo6.to(".worksLine6", {
+        scaleX: 1,
+        opacity: 1,
+        duration: 0.7,
+        ease: "expo",
+      });
+
+      worksTlTo6.to(".worksInfoContainer6", {
+        height: "auto",
+        duration: 0.7,
+        ease: "expo",
+      });
+
+      clickCounter6 = true;
+    } else if (clickCounter6 === true) {
+      let worksTlFrom6 = gsap.timeline();
+
+      worksTlFrom6.to(".worksLine6", {
+        scaleX: 0,
+        opacity: 0,
+        duration: 0.7,
+        ease: "expo",
+      });
+
+      worksTlFrom6.to(".worksInfoContainer6", {
+        height: "13vh",
+        duration: 0.7,
+        ease: "expo",
+      });
+
+      clickCounter6 = false;
+    }
+  });
+
+  //w7
+
+  w7.addEventListener("mouseenter", function () {
+    gsap.to(".course7", {
+      y: 0,
+      opacity: 1,
+      duration: 0.3,
+      ease: "expo",
+    });
+    gsap.to(".header7", {
+      color: "#FBF8F2",
+      duration: 0.4,
+      ease: "expo",
+    });
+  });
+
+  w7.addEventListener("mouseleave", function () {
+    gsap.to(".course7", {
+      y: 50,
+      opacity: 0,
+      duration: 0.3,
+      ease: "expo",
+    });
+    gsap.to(".header7", {
+      color: "transparent",
+      duration: 0.4,
+      ease: "expo",
+    });
+  });
+
+  w7.addEventListener("click", function () {
+    if (clickCounter7 === false) {
+      let worksTlTo7 = gsap.timeline();
+
+      worksTlTo7.to(".worksLine7", {
+        scaleX: 1,
+        opacity: 1,
+        duration: 0.7,
+        ease: "expo",
+      });
+
+      worksTlTo7.to(".worksInfoContainer7", {
+        height: "auto",
+        duration: 0.7,
+        ease: "expo",
+      });
+
+      clickCounter7 = true;
+    } else if (clickCounter7 === true) {
+      let worksTlFrom7 = gsap.timeline();
+
+      worksTlFrom7.to(".worksLine7", {
+        scaleX: 0,
+        opacity: 0,
+        duration: 0.7,
+        ease: "expo",
+      });
+
+      worksTlFrom7.to(".worksInfoContainer7", {
+        height: "13vh",
+        duration: 0.7,
+        ease: "expo",
+      });
+
+      clickCounter7 = false;
+    }
+  });
+
+  //w8
+
+  w8.addEventListener("mouseenter", function () {
+    gsap.to(".course8", {
+      y: 0,
+      opacity: 1,
+      duration: 0.3,
+      ease: "expo",
+    });
+    gsap.to(".header8", {
+      color: "#FBF8F2",
+      duration: 0.4,
+      ease: "expo",
+    });
+  });
+
+  w8.addEventListener("mouseleave", function () {
+    gsap.to(".course8", {
+      y: 50,
+      opacity: 0,
+      duration: 0.3,
+      ease: "expo",
+    });
+    gsap.to(".header8", {
+      color: "transparent",
+      duration: 0.4,
+      ease: "expo",
+    });
+  });
+
+  w8.addEventListener("click", function () {
+    if (clickCounter8 === false) {
+      let worksTlTo8 = gsap.timeline();
+
+      worksTlTo8.to(".worksLine8", {
+        scaleX: 1,
+        opacity: 1,
+        duration: 0.7,
+        ease: "expo",
+      });
+
+      worksTlTo8.to(".worksInfoContainer8", {
+        height: "auto",
+        duration: 0.7,
+        ease: "expo",
+      });
+
+      clickCounter8 = true;
+    } else if (clickCounter8 === true) {
+      let worksTlFrom8 = gsap.timeline();
+
+      worksTlFrom8.to(".worksLine8", {
+        scaleX: 0,
+        opacity: 0,
+        duration: 0.7,
+        ease: "expo",
+      });
+
+      worksTlFrom8.to(".worksInfoContainer8", {
+        height: "13vh",
+        duration: 0.7,
+        ease: "expo",
+      });
+
+      clickCounter8 = false;
+    }
+  });
 }

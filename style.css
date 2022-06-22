@@ -526,7 +526,8 @@ a:active {
   transform-origin: 0 50%;
   position: fixed;
   top: 8%;
-  width: 100%;
+  width: 40%;
+  height: 100vh;
 }
 
 .backAnchor {
@@ -537,7 +538,7 @@ a:active {
   font-family: "Montserrat-Thin", sans-serif;
   font-size: 1em;
   font-weight: 500;
-  margin: 12% 0;
+  margin: 20% 0;
 }
 
 .worksH6 {
@@ -618,12 +619,12 @@ a:active {
   overflow: hidden;
 }
 
-.moreWorksContainer1 {
+.moreWorksContainer {
   width: 70%;
 }
 
 .space {
-  height: 20vh;
+  height: 40vh;
 }
 
 .aboutWorks {
@@ -668,6 +669,7 @@ a:active {
   display: flex;
   justify-content: space-between;
   padding: 8px 0 8px 0;
+  align-items: center;
 }
 
 .underline2 {
