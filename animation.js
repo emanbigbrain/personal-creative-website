@@ -662,11 +662,6 @@ if (document.getElementById("indexHtml")) {
 }
 
 if (document.getElementById("worksHtml")) {
-  const scroll = new LocomotiveScroll({
-    el: document.querySelector("[data-scroll-container]"),
-    smooth: true,
-  });
-
   let clickCounter1 = false;
   let clickCounter2 = false;
   let clickCounter3 = false;
@@ -685,6 +680,12 @@ if (document.getElementById("worksHtml")) {
   let w6 = document.getElementById("w6");
   let w7 = document.getElementById("w7");
   let w8 = document.getElementById("w8");
+
+  let worksBody = document.getElementById("worksHtml");
+
+  worksBody.addEventListener("mouseenter", function () {
+    document.getElementById("myAudio2").play();
+  });
 
   w1.addEventListener("mouseenter", function () {
     gsap.to(".course1", {
@@ -1224,5 +1225,19 @@ if (document.getElementById("worksHtml")) {
 
       clickCounter8 = false;
     }
+  });
+
+  gsap.to(".topHeaderContainer", {
+    scrollTrigger: {
+      trigger: ".scroll1",
+      start: "top 3%",
+      end: "top 3%",
+      markers: true,
+      toggleActions: "play none reverse none",
+    },
+    y: -10,
+    opacity: 0,
+    duration: 0.4,
+    ease: "smooth",
   });
 }

@@ -10,10 +10,7 @@
       rel="stylesheet"
     />
     <link rel="icon" href="data:," />
-    <script
-      src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"
-      defer
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
     <script src="https://cdn.jsdelivr.net/npm/letterizejs@2.0.1/lib/letterize.min.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
@@ -31,43 +28,40 @@
     ></script>
     <title>Emmanuel Lutteodt Works</title>
   </head>
-  <body class="stop-scrolling" id="worksHtml">
-    <audio loop id="myAudio">
-      <source
-        id="myAudio"
-        src="media/peaceful-garden-healing-light-piano-for-meditation-zen-landscapes-112199.mp3"
-        type="audio/mpeg"
-      />
-    </audio>
-    <audio id="hoverAudio">
-      <source id="hoverAudio" src="media/ClickSound.wav" type="audio/wav" />
-    </audio>
-    <audio id="hoverAudioFlex">
-      <source
-        id="hoverAudioFlex"
-        src="media/lowPitchVioline.wav"
-        type="audio/wav"
-      />
-    </audio>
-    <div class="worksHtmlFlex">
-      <div class="topNavBar">
-        <div class="headerDiv homeButton">
-          <img src="media/headerStar.svg" />
-          <h6>LUTTERODT, 2022</h6>
+  <body data-barba="wrapper" id="worksHtml">
+    <div data-barba="container" data-barba-namespace="home">
+      <audio loop id="myAudio2">
+        <source id="myAudio2" src="media/dunes-7115.mp3" type="audio/mpeg" />
+      </audio>
+      <audio id="hoverAudio">
+        <source id="hoverAudio" src="media/ClickSound.wav" type="audio/wav" />
+      </audio>
+      <audio id="hoverAudioFlex">
+        <source
+          id="hoverAudioFlex"
+          src="media/lowPitchVioline.wav"
+          type="audio/wav"
+        />
+      </audio>
+      <header class="topHeaderContainer">
+        <nav class="indexNav">
+          <div class="headerDiv homeButton">
+            <img src="media/headerStar.svg" />
+            <h6>LUTTERODT, 2022</h6>
+          </div>
+          <a href="works.html"><h5 class="myWorksButton">My Works</h5></a>
+          <div class="headerDiv behanceButton">
+            <img src="media/Behance.svg" />
+            <h6>Behance</h6>
+          </div>
+        </nav>
+        <div class="underlineContainer">
+          <div class="underline"></div>
         </div>
-        <h5 class="myWorksButton">My Works</h5>
-        <div class="headerDiv behanceButton">
-          <img src="media/Behance.svg" />
-          <h6>Behance</h6>
-        </div>
-      </div>
-      <div class="underlineContainer">
-        <div class="underline2"></div>
-      </div>
-
-      <main data-scroll-container>
-        <section data-scroll-section class="sectionFlex">
-          <div class="moreWorksContainer">
+      </header>
+      <main>
+        <section class="sectionFlex">
+          <div class="moreWorksContainer scroll1">
             <p class="worksCourse course1">VISUAL COMMUNICATION @ JU</p>
             <div class="worksInfoContainer1" id="w1">
               <h4 class="worksH4 header1">ANCIENT GREEK</h4>
@@ -96,55 +90,53 @@
             <div class="worksLine1"></div>
           </div>
           <div class="moreWorksContainer">
-            <p class="worksCourse course2">VISUAL COMMUNICATION @ JU</p>
+            <p class="worksCourse course2">USER EXPERIENCE DESIGN @ JU</p>
             <div class="worksInfoContainer2" id="w2">
               <h4 class="worksH4 header2">MUNCHIES</h4>
               <div class="worksInfoContainerFlex">
                 <div>
                   <h6 class="aboutWorks">ABOUT</h6>
                   <p class="smallDescriptionWorks">
-                    This project was done on behalf of the Visual Communication
-                    course, designing, and developing a creative storytelling
-                    magazine experience, with a small hand of young talented
-                    students from Jonkoping University.
+                    This project was done on behalf of the User Experience
+                    Design course, designing an interactive prototype, and
+                    iterating its design with a group of three from Jonkoping
+                    University.
                   </p>
                 </div>
                 <div class="durationContainer">
                   <h6 class="aboutWorks">DURATION</h6>
-                  <p class="smallDescriptionWorks">2 WEEKS</p>
+                  <p class="smallDescriptionWorks">2 MONTHS</p>
                 </div>
                 <div class="toolsContainer">
                   <h6 class="aboutWorks">TOOLS</h6>
-                  <p class="smallDescriptionWorks">
-                    FIGMA<br />HTML<br />CSS<br />JAVASCRIPT<br />GSAP<br />ANIME.JS<br />BARBA.JS<br />LOCOMOTIVE.JS
-                  </p>
+                  <p class="smallDescriptionWorks">FIGMA<br />GOOGLE SURVEY</p>
                 </div>
               </div>
             </div>
             <div class="worksLine2"></div>
           </div>
           <div class="moreWorksContainer">
-            <p class="worksCourse course3">VISUAL COMMUNICATION @ JU</p>
+            <p class="worksCourse course3">FOUNDATIONS OF PROGRAMMING @ JU</p>
             <div class="worksInfoContainer3" id="w3">
               <h4 class="worksH4 header3">GAMEFLIX</h4>
               <div class="worksInfoContainerFlex">
                 <div>
                   <h6 class="aboutWorks">ABOUT</h6>
                   <p class="smallDescriptionWorks">
-                    This project was done on behalf of the Visual Communication
-                    course, designing, and developing a creative storytelling
-                    magazine experience, with a small hand of young talented
-                    students from Jonkoping University.
+                    This project was done in connection with the Foundations of
+                    Programming course at Jonkoping University. With a group of
+                    2, the project implemented small minigames, and minigame
+                    platform that used the local storage to save game scores.
                   </p>
                 </div>
                 <div class="durationContainer">
                   <h6 class="aboutWorks">DURATION</h6>
-                  <p class="smallDescriptionWorks">2 WEEKS</p>
+                  <p class="smallDescriptionWorks">1 MONTH</p>
                 </div>
                 <div class="toolsContainer">
                   <h6 class="aboutWorks">TOOLS</h6>
                   <p class="smallDescriptionWorks">
-                    FIGMA<br />HTML<br />CSS<br />JAVASCRIPT<br />GSAP<br />ANIME.JS<br />BARBA.JS<br />LOCOMOTIVE.JS
+                    FIGMA<br />HTML<br />CSS<br />JAVASCRIPT<br />ANIME.JS<br />
                   </p>
                 </div>
               </div>
@@ -152,129 +144,126 @@
             <div class="worksLine3"></div>
           </div>
           <div class="moreWorksContainer">
-            <p class="worksCourse course4">VISUAL COMMUNICATION @ JU</p>
+            <p class="worksCourse course4">
+              BUSINESS PLANNING AND ENTREPRENEURSHIP @ JU
+            </p>
             <div class="worksInfoContainer4" id="w4">
               <h4 class="worksH4 header4">ONSPEED</h4>
               <div class="worksInfoContainerFlex">
                 <div>
                   <h6 class="aboutWorks">ABOUT</h6>
                   <p class="smallDescriptionWorks">
-                    This project was done on behalf of the Visual Communication
-                    course, designing, and developing a creative storytelling
-                    magazine experience, with a small hand of young talented
-                    students from Jonkoping University.
+                    This project was an additional extra small project that went
+                    hand in hand with a business plan pitch, of OnSpeed, a same
+                    day parcel delivery business. The business plan was
+                    compeleted in a group of 4.
                   </p>
                 </div>
                 <div class="durationContainer">
                   <h6 class="aboutWorks">DURATION</h6>
-                  <p class="smallDescriptionWorks">2 WEEKS</p>
+                  <p class="smallDescriptionWorks">3 DAYS</p>
                 </div>
                 <div class="toolsContainer">
                   <h6 class="aboutWorks">TOOLS</h6>
-                  <p class="smallDescriptionWorks">
-                    FIGMA<br />HTML<br />CSS<br />JAVASCRIPT<br />GSAP<br />ANIME.JS<br />BARBA.JS<br />LOCOMOTIVE.JS
-                  </p>
+                  <p class="smallDescriptionWorks">FIGMA</p>
                 </div>
               </div>
             </div>
             <div class="worksLine4"></div>
           </div>
           <div class="moreWorksContainer">
-            <p class="worksCourse course5">VISUAL COMMUNICATION @ JU</p>
+            <p class="worksCourse course5">PERSONAL PROJECT @ HOME</p>
             <div class="worksInfoContainer5" id="w5">
               <h4 class="worksH4 header5">ESTER</h4>
               <div class="worksInfoContainerFlex">
                 <div>
                   <h6 class="aboutWorks">ABOUT</h6>
                   <p class="smallDescriptionWorks">
-                    This project was done on behalf of the Visual Communication
-                    course, designing, and developing a creative storytelling
-                    magazine experience, with a small hand of young talented
-                    students from Jonkoping University.
+                    This project was done in order to get better acquainted with
+                    Figma. It includes only the sign up screens, and was
+                    discontinued afterwards. The project also, included external
+                    illustrations, which practiced working with other people's
+                    graphical elements.
                   </p>
                 </div>
                 <div class="durationContainer">
                   <h6 class="aboutWorks">DURATION</h6>
-                  <p class="smallDescriptionWorks">2 WEEKS</p>
+                  <p class="smallDescriptionWorks">2 DAYS</p>
                 </div>
                 <div class="toolsContainer">
                   <h6 class="aboutWorks">TOOLS</h6>
-                  <p class="smallDescriptionWorks">
-                    FIGMA<br />HTML<br />CSS<br />JAVASCRIPT<br />GSAP<br />ANIME.JS<br />BARBA.JS<br />LOCOMOTIVE.JS
-                  </p>
+                  <p class="smallDescriptionWorks">FIGMA</p>
                 </div>
               </div>
             </div>
             <div class="worksLine5"></div>
           </div>
           <div class="moreWorksContainer">
-            <p class="worksCourse course6">VISUAL COMMUNICATION @ JU</p>
+            <p class="worksCourse course6">PERSONAL PROJECT @ HOME</p>
             <div class="worksInfoContainer6" id="w6">
               <h4 class="worksH4 header6">QUIRK</h4>
               <div class="worksInfoContainerFlex">
                 <div>
                   <h6 class="aboutWorks">ABOUT</h6>
                   <p class="smallDescriptionWorks">
-                    This project was done on behalf of the Visual Communication
-                    course, designing, and developing a creative storytelling
-                    magazine experience, with a small hand of young talented
-                    students from Jonkoping University.
+                    This project was done in order to practice web design based
+                    on client briefings. The design only includes the landing
+                    screen page, of a fictacious company "Quirk", a sports/urban
+                    style clothing brand.
                   </p>
                 </div>
                 <div class="durationContainer">
                   <h6 class="aboutWorks">DURATION</h6>
-                  <p class="smallDescriptionWorks">2 WEEKS</p>
+                  <p class="smallDescriptionWorks">2 DAYS</p>
                 </div>
                 <div class="toolsContainer">
                   <h6 class="aboutWorks">TOOLS</h6>
-                  <p class="smallDescriptionWorks">
-                    FIGMA<br />HTML<br />CSS<br />JAVASCRIPT<br />GSAP<br />ANIME.JS<br />BARBA.JS<br />LOCOMOTIVE.JS
-                  </p>
+                  <p class="smallDescriptionWorks">FIGMA</p>
                 </div>
               </div>
             </div>
             <div class="worksLine6"></div>
           </div>
           <div class="moreWorksContainer">
-            <p class="worksCourse course7">VISUAL COMMUNICATION @ JU</p>
+            <p class="worksCourse course7">PERSONAL PROJECT @ HOME</p>
             <div class="worksInfoContainer7" id="w7">
               <h4 class="worksH4 header7">PRIME LIMO</h4>
               <div class="worksInfoContainerFlex">
                 <div>
                   <h6 class="aboutWorks">ABOUT</h6>
                   <p class="smallDescriptionWorks">
-                    This project was done on behalf of the Visual Communication
-                    course, designing, and developing a creative storytelling
-                    magazine experience, with a small hand of young talented
-                    students from Jonkoping University.
+                    This project just like the one before was done in order to
+                    practice web design based on client briefings. The design
+                    only includes a scrollable landing page for a fictacious
+                    company named "Prime Limo", a Limousine rental service, that
+                    offers different prices classes, and vehicles.
                   </p>
                 </div>
                 <div class="durationContainer">
                   <h6 class="aboutWorks">DURATION</h6>
-                  <p class="smallDescriptionWorks">2 WEEKS</p>
+                  <p class="smallDescriptionWorks">2 DAYS</p>
                 </div>
                 <div class="toolsContainer">
                   <h6 class="aboutWorks">TOOLS</h6>
-                  <p class="smallDescriptionWorks">
-                    FIGMA<br />HTML<br />CSS<br />JAVASCRIPT<br />GSAP<br />ANIME.JS<br />BARBA.JS<br />LOCOMOTIVE.JS
-                  </p>
+                  <p class="smallDescriptionWorks">FIGMA</p>
                 </div>
               </div>
             </div>
             <div class="worksLine7"></div>
           </div>
           <div class="moreWorksContainer">
-            <p class="worksCourse course8">VISUAL COMMUNICATION @ JU</p>
+            <p class="worksCourse course8">PERSONAL PROJECT @ HOME</p>
             <div class="worksInfoContainer8" id="w8">
               <h4 class="worksH4 header8">THIS WEBSITE</h4>
               <div class="worksInfoContainerFlex">
                 <div>
                   <h6 class="aboutWorks">ABOUT</h6>
                   <p class="smallDescriptionWorks">
-                    This project was done on behalf of the Visual Communication
-                    course, designing, and developing a creative storytelling
-                    magazine experience, with a small hand of young talented
-                    students from Jonkoping University.
+                    When having learned the fundamentals of Javascript, I put my
+                    skills to the test, and developed an interactive experience,
+                    that is supposed to act as a creative website. The websites,
+                    displays, all my current works, and expresses who I am as
+                    soon coming professional in the field.
                   </p>
                 </div>
                 <div class="durationContainer">
@@ -284,7 +273,7 @@
                 <div class="toolsContainer">
                   <h6 class="aboutWorks">TOOLS</h6>
                   <p class="smallDescriptionWorks">
-                    FIGMA<br />HTML<br />CSS<br />JAVASCRIPT<br />GSAP<br />ANIME.JS<br />BARBA.JS<br />LOCOMOTIVE.JS
+                    FIGMA<br />HTML<br />CSS<br />JAVASCRIPT<br />GSAP<br />ANIME.JS<br />BARBA.JS
                   </p>
                 </div>
               </div>

@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <link rel="icon" href="data:," />
+    <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
     <script src="https://cdn.jsdelivr.net/npm/letterizejs@2.0.1/lib/letterize.min.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
@@ -27,213 +28,220 @@
     ></script>
     <title>Emmanuel Lutterodt</title>
   </head>
-  <body class="stop-scrolling" id="indexHtml">
-    <audio loop id="myAudio">
-      <source
-        id="myAudio"
-        src="media/peaceful-garden-healing-light-piano-for-meditation-zen-landscapes-112199.mp3"
-        type="audio/mpeg"
+  <body data-barba="wrapper" class="stop-scrolling" id="indexHtml">
+    <div data-barba="container" data-barba-namespace="home">
+      <audio loop id="myAudio">
+        <source
+          id="myAudio"
+          src="media/peaceful-garden-healing-light-piano-for-meditation-zen-landscapes-112199.mp3"
+          type="audio/mpeg"
+        />
+      </audio>
+      <audio id="hoverAudio">
+        <source id="hoverAudio" src="media/ClickSound.wav" type="audio/wav" />
+      </audio>
+      <audio id="hoverAudioFlex">
+        <source
+          id="hoverAudioFlex"
+          src="media/lowPitchVioline.wav"
+          type="audio/wav"
+        />
+      </audio>
+      <img
+        class="ancientGreekGif"
+        id="ancientGreekGif"
+        src="media/2022_06_18_065233_AdobeExpress (1).gif"
       />
-    </audio>
-    <audio id="hoverAudio">
-      <source id="hoverAudio" src="media/ClickSound.wav" type="audio/wav" />
-    </audio>
-    <audio id="hoverAudioFlex">
-      <source
-        id="hoverAudioFlex"
-        src="media/lowPitchVioline.wav"
-        type="audio/wav"
+      <img
+        class="munchiesGif"
+        id="munchiesGif"
+        src="media/2022_06_18_065654_AdobeExpress_AdobeExpress.gif"
       />
-    </audio>
-    <img
-      class="ancientGreekGif"
-      id="ancientGreekGif"
-      src="media/2022_06_18_065233_AdobeExpress (1).gif"
-    />
-    <img
-      class="munchiesGif"
-      id="munchiesGif"
-      src="media/2022_06_18_065654_AdobeExpress_AdobeExpress.gif"
-    />
-    <img
-      class="onSpeedGif"
-      id="onSpeedGif"
-      src="media/2022_06_18_065621_AdobeExpress_AdobeExpress.gif"
-    />
-    <img
-      class="gameflixGif"
-      id="gameflixGif"
-      src="media/Editor_8__AdobeExpress.gif"
-    />
-    <header>
-      <nav class="indexNav">
-        <div class="headerDiv homeButton">
-          <img src="media/headerStar.svg" />
-          <h6>LUTTERODT, 2022</h6>
-        </div>
-        <a href="works.html"><h5 class="myWorksButton">My Portfolio</h5></a>
-        <div class="headerDiv behanceButton">
-          <img src="media/Behance.svg" />
-          <h6>Behance</h6>
-        </div>
-      </nav>
-      <div class="underlineContainer">
-        <div class="underline"></div>
-      </div>
-    </header>
-    <main>
-      <img class="heroStar" src="media/bigStar.svg" />
-      <div class="heroContainer">
-        <h1>
-          <span class="letterAnimation">E</span
-          ><span class="letterAnimation">M</span
-          ><span class="letterAnimation">M</span
-          ><span class="letterAnimation">A</span
-          ><span class="letterAnimation">N</span
-          ><span class="letterAnimation">U</span
-          ><span class="letterAnimation">E</span
-          ><span class="letterAnimation">L</span><br /><span
-            class="lutterodtAnimation"
-            class="lutterodtAnimation"
-            >L</span
-          ><span class="lutterodtAnimation">U</span
-          ><span class="lutterodtAnimation">T</span
-          ><span class="lutterodtAnimation">T</span
-          ><span class="lutterodtAnimation">E</span
-          ><span class="lutterodtAnimation">R</span
-          ><span class="lutterodtAnimation">O</span
-          ><span class="lutterodtAnimation">D</span
-          ><span class="lutterodtAnimation">T</span>
-        </h1>
-      </div>
-      <div class="scrollDownContainer scrollDown">
-        <h6 class="scrollDown">SCROLL DOWN</h6>
-      </div>
-      <article>
-        <img class="doubleStars" src="media/twoStars.svg" />
-        <div class="h2Container">
-          <h2>
-            <span class="h2Word">I</span> <span class="h2Word">am</span>
-            <span class="h2Word">a</span>
-            <span class="h2SpanWord">Creator</span>
-          </h2>
-        </div>
-        <section class="firstSection" id="firstSection">
-          <div class="seperationContainer">
-            <div class="line1"></div>
-            <img class="sepStar" src="media/seperationStar.svg" alt="" />
-            <div class="line2"></div>
+      <img
+        class="onSpeedGif"
+        id="onSpeedGif"
+        src="media/2022_06_18_065621_AdobeExpress_AdobeExpress.gif"
+      />
+      <img
+        class="gameflixGif"
+        id="gameflixGif"
+        src="media/Editor_8__AdobeExpress.gif"
+      />
+      <header>
+        <nav class="indexNav">
+          <div class="headerDiv homeButton">
+            <img src="media/headerStar.svg" />
+            <h6>LUTTERODT, 2022</h6>
           </div>
-          <h3 class="workEthicTitle">WORK ETHIC</h3>
-          <p class="firstText" id="firstText">
-            <span class="normalSpan" id="normalSpan">Most</span>
-            <span class="displaySpan">solutions</span>
-            <span class="normalSpan" id="normalSpan"
-              >are straight forward, but people</span
-            >
-            <span class="displaySpan">choose</span>
-            <span class="normalSpan" id="normalSpan"
-              >not to see them that way...</span
-            >
-          </p>
-          <div class="workEthicContainer">
-            <p class="secondText">
-              That’s why when life gives you lemons, <span>give them back</span>
+          <a href="works.html"><h5 class="myWorksButton">My Portfolio</h5></a>
+          <div class="headerDiv behanceButton">
+            <img src="media/Behance.svg" />
+            <h6>Behance</h6>
+          </div>
+        </nav>
+        <div class="underlineContainer">
+          <div class="underline"></div>
+        </div>
+      </header>
+      <main>
+        <img class="heroStar" src="media/bigStar.svg" />
+        <div class="heroContainer">
+          <h1>
+            <span class="letterAnimation">E</span
+            ><span class="letterAnimation">M</span
+            ><span class="letterAnimation">M</span
+            ><span class="letterAnimation">A</span
+            ><span class="letterAnimation">N</span
+            ><span class="letterAnimation">U</span
+            ><span class="letterAnimation">E</span
+            ><span class="letterAnimation">L</span><br /><span
+              class="lutterodtAnimation"
+              class="lutterodtAnimation"
+              >L</span
+            ><span class="lutterodtAnimation">U</span
+            ><span class="lutterodtAnimation">T</span
+            ><span class="lutterodtAnimation">T</span
+            ><span class="lutterodtAnimation">E</span
+            ><span class="lutterodtAnimation">R</span
+            ><span class="lutterodtAnimation">O</span
+            ><span class="lutterodtAnimation">D</span
+            ><span class="lutterodtAnimation">T</span>
+          </h1>
+        </div>
+        <div class="scrollDownContainer scrollDown">
+          <h6 class="scrollDown">SCROLL DOWN</h6>
+        </div>
+        <article>
+          <img class="doubleStars" src="media/twoStars.svg" />
+          <div class="h2Container">
+            <h2>
+              <span class="h2Word">I</span> <span class="h2Word">am</span>
+              <span class="h2Word">a</span>
+              <span class="h2SpanWord">Creator</span>
+            </h2>
+          </div>
+          <section class="firstSection" id="firstSection">
+            <div class="seperationContainer">
+              <div class="line1"></div>
+              <img class="sepStar" src="media/seperationStar.svg" alt="" />
+              <div class="line2"></div>
+            </div>
+            <h3 class="workEthicTitle">WORK ETHIC</h3>
+            <p class="firstText" id="firstText">
+              <span class="normalSpan" id="normalSpan">Most</span>
+              <span class="displaySpan">solutions</span>
+              <span class="normalSpan" id="normalSpan"
+                >are straight forward, but people</span
+              >
+              <span class="displaySpan">choose</span>
+              <span class="normalSpan" id="normalSpan"
+                >not to see them that way...</span
+              >
             </p>
+            <div class="workEthicContainer">
+              <p class="secondText">
+                That’s why when life gives you lemons,
+                <span>give them back</span>
+              </p>
+            </div>
+            <div class="seperationContainer">
+              <div class="line3"></div>
+              <img class="sepStar2" src="media/seperationStar.svg" alt="" />
+              <div class="line4"></div>
+            </div>
+          </section>
+          <h3 class="myWorksTitle">MY WORKS</h3>
+          <a href="https://baccoae.github.io/codesigners-philosophy-website/"
+            ><div class="worksContainer c1" id="worksContainer1">
+              <div class="titleContainer">
+                <p class="numbering">01</p>
+                <h4>Ancient Greek</h4>
+              </div>
+              <p class="details">WEB DESIGN</p>
+            </div>
+          </a>
+          <a
+            href="https://www.behance.net/gallery/138351271/Munchies-UIUX-Design"
+          >
+            <div class="worksContainer c2" id="worksContainer2">
+              <div class="titleContainer">
+                <p class="numbering">02</p>
+                <h4>Munchies</h4>
+              </div>
+              <p class="details">UX/UI DESIGN</p>
+            </div>
+          </a>
+          <a href="https://ju-nmd2021.github.io/fop-project-group_5/index.html">
+            <div class="worksContainer c3" id="worksContainer3">
+              <div class="titleContainer">
+                <p class="numbering">03</p>
+                <h4>Gameflix</h4>
+              </div>
+              <p class="details">WEB DESIGN, AND DEVELOPMENT</p>
+            </div>
+          </a>
+          <a
+            href="https://www.behance.net/gallery/139425945/OnSpeed-Mobile-App-UI"
+          >
+            <div class="worksContainer c4" id="worksContainer4">
+              <div class="titleContainer">
+                <p class="numbering">04</p>
+                <h4>OnSpeed</h4>
+              </div>
+              <p class="details">UI DESIGN</p>
+            </div>
+          </a>
+        </article>
+        <section class="lastSection">
+          <div class="aboutContainer">
+            <h4 class="aboutMeTitle">About Me</h4>
           </div>
-          <div class="seperationContainer">
-            <div class="line3"></div>
-            <img class="sepStar2" src="media/seperationStar.svg" alt="" />
-            <div class="line4"></div>
+          <div class="aboutGrid">
+            <p class="aboutText">
+              Hey, my name is Emmanuel, and consider myself as a creative freak.
+              Just not one of those boring ones. I come from Germany, and have
+              lived in 4 countries, enjoying my experiences along the way. Want
+              to know more?
+            </p>
+            <form>
+              <label>Contact Me</label>
+              <div class="submissionContainer">
+                <input
+                  class="inputField"
+                  type="text"
+                  id="email"
+                  name="email"
+                  placeholder="<Write down your email here>"
+                />
+                <input class="inputButton" type="submit" value="SUBMIT" />
+              </div>
+            </form>
+            <img class="mediumStar" src="media/mediumStar.svg" />
+            <img class="normalStar" src="media/normalStar.svg" />
+            <div class="emojiContainer">
+              <img class="emoji" src="media/emoji.svg" />
+            </div>
+            <img class="bottomMediumStar" src="media/mediumStar.svg" />
           </div>
         </section>
-        <h3 class="myWorksTitle">MY WORKS</h3>
-        <a href="https://baccoae.github.io/codesigners-philosophy-website/"
-          ><div class="worksContainer c1" id="worksContainer1">
-            <div class="titleContainer">
-              <p class="numbering">01</p>
-              <h4>Ancient Greek</h4>
-            </div>
-            <p class="details">WEB DESIGN</p>
-          </div>
-        </a>
-        <a
-          href="https://www.behance.net/gallery/138351271/Munchies-UIUX-Design"
-        >
-          <div class="worksContainer c2" id="worksContainer2">
-            <div class="titleContainer">
-              <p class="numbering">02</p>
-              <h4>Munchies</h4>
-            </div>
-            <p class="details">UX/UI DESIGN</p>
-          </div>
-        </a>
-        <a href="https://ju-nmd2021.github.io/fop-project-group_5/index.html">
-          <div class="worksContainer c3" id="worksContainer3">
-            <div class="titleContainer">
-              <p class="numbering">03</p>
-              <h4>Gameflix</h4>
-            </div>
-            <p class="details">WEB DESIGN, AND DEVELOPMENT</p>
-          </div>
-        </a>
-        <a
-          href="https://www.behance.net/gallery/139425945/OnSpeed-Mobile-App-UI"
-        >
-          <div class="worksContainer c4" id="worksContainer4">
-            <div class="titleContainer">
-              <p class="numbering">04</p>
-              <h4>OnSpeed</h4>
-            </div>
-            <p class="details">UI DESIGN</p>
-          </div>
-        </a>
-      </article>
-      <section class="lastSection">
-        <div class="aboutContainer">
-          <h4 class="aboutMeTitle">About Me</h4>
+      </main>
+      <footer class="muteButton" id="muteButton">
+        <p id="buttonText" class="buttonText">PLAY MUSIC</p>
+      </footer>
+      <div class="openerDiv" id="openerDivId">
+        <img
+          class="headphone"
+          src="media/headphones.svg"
+          alt="headphones on?"
+        />
+        <aside>
+          Headphones on for the best experience. Would you like to play opening
+          music?
+        </aside>
+        <div class="buttonDiv">
+          <button class="audioButton1" id="yesButton">Yeah</button>
+          <button class="audioButton2" id="noButton">Nah</button>
         </div>
-        <div class="aboutGrid">
-          <p class="aboutText">
-            Hey, my name is Emmanuel, and consider myself as a creative freak.
-            Just not one of those boring ones. I come from Germany, and have
-            lived in 4 countries, enjoying my experiences along the way. Want to
-            know more?
-          </p>
-          <form>
-            <label>Contact Me</label>
-            <div class="submissionContainer">
-              <input
-                class="inputField"
-                type="text"
-                id="email"
-                name="email"
-                placeholder="<Write down your email here>"
-              />
-              <input class="inputButton" type="submit" value="SUBMIT" />
-            </div>
-          </form>
-          <img class="mediumStar" src="media/mediumStar.svg" />
-          <img class="normalStar" src="media/normalStar.svg" />
-          <div class="emojiContainer">
-            <img class="emoji" src="media/emoji.svg" />
-          </div>
-          <img class="bottomMediumStar" src="media/mediumStar.svg" />
-        </div>
-      </section>
-    </main>
-    <footer class="muteButton" id="muteButton">
-      <p id="buttonText" class="buttonText">PLAY MUSIC</p>
-    </footer>
-    <div class="openerDiv" id="openerDivId">
-      <img class="headphone" src="media/headphones.svg" alt="headphones on?" />
-      <aside>
-        Headphones on for the best experience. Would you like to play opening
-        music?
-      </aside>
-      <div class="buttonDiv">
-        <button class="audioButton1" id="yesButton">Yeah</button>
-        <button class="audioButton2" id="noButton">Nah</button>
       </div>
     </div>
     <script src="animation.js" defer></script>
